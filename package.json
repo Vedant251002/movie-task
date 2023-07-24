@@ -1,0 +1,32 @@
+{
+  "name": "movie-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "connect-redis": "^7.0.1",
+    "cookie-parser": "~1.4.4",
+    "csvtojson": "^2.0.10",
+    "express": "~4.16.1",
+    "express-session": "^1.17.3",
+    "express-validator": "^7.0.1",
+    "http-errors": "~1.6.3",
+    "mysql2": "^3.5.2",
+    "pg": "^8.11.1",
+    "redis": "^3.1.2"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vedant251002/movie-task.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vedant251002/movie-task/issues"
+  },
+  "homepage": "https://github.com/Vedant251002/movie-task#readme",
+  "description": ""
+}

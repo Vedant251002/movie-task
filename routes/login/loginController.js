@@ -4,9 +4,7 @@ const jwt = require('jsonwebtoken')
 const sc = 'sc'
 
 module.exports = {
-  
   makeToken,
-  logout
 }
 
 async function makeToken(req, res, next) {
@@ -17,6 +15,10 @@ async function makeToken(req, res, next) {
       res.json({
         token ,
       });
+    }else{
+      res.json({
+        msg : 'User not Defined'
+      })
     }
   } catch (error) {
     res.json({
@@ -26,7 +28,3 @@ async function makeToken(req, res, next) {
 }
 
 
-
-function logout(req, res)  {
-
-};

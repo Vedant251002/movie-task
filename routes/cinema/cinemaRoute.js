@@ -3,17 +3,21 @@ const router = express.Router();
 const client = require('../../config_files/redisConfig.js')
 const controllers = require('./cinemaController.js')
 
+const jwt = require('jsonwebtoken');
+const sc = 'sc'
+
 function checkLogin(req, res, next) {
-    client.get('isLogin' , (error,reply) => {
-  
-      if (JSON.parse(reply)) {
+  let token = req.headers['authorization'];
+
+    jwt.verify(token , sc , (error , reply) => {
+      if (reply) {
         next();
       } else {
         res.json({
           msg: "please login first",
         });
       }
-    });
+    })
     }
 
     router.get("/",checkLogin , controllers.getCinema);

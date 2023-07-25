@@ -1,5 +1,5 @@
 
-const connection = require('../../configPG');
+const connection = require('../../config_files/configPG');
 
 const models = {
     cityDb,

@@ -4,11 +4,11 @@ var path = require("path");
 var session = require("express-session");
 
 
-var cityApi = require("./routes/cityDemo.js");
-var cinemaApi = require("./routes/cinemaDemo.js");
+var cityApi = require("./routes/city/cityRoute.js");
+var cinemaApi = require("./routes/cinema/cinemaRoute.js");
 const ceoApi = require("./routes/ceo/ceoRoute.js");
-const login = require("./routes/login.js");
-const readApi = require('./readCSV.js')
+const login = require("./routes/login/loginRoute.js");
+const readApi = require('./csv_files/readCSV.js')
 
 var app = express();
 

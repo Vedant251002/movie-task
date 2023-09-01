@@ -9,7 +9,7 @@ module.exports = {
 }
 
 async function getCityDb(){
-    let query = `select * from city;`;
+    let query = `select * from city_data();`;
     return connection.query(query);
 }
 

@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const controllers = require('./ceoController.js')
-const client = require('../../config_files/redisConfig.js')
+// const client = require('../../config_files/redisConfig.js')
 const jwt = require('jsonwebtoken');
 const sc = 'sc'
 

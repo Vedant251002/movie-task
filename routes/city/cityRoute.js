@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const client = require('../../config_files/redisConfig')
+// const client = require('../../config_files/redisConfig')
 const controllers = require('./cityController.js')
 const jwt = require('jsonwebtoken');
 const sc = 'sc'
